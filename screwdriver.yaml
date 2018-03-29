@@ -6,4 +6,4 @@ jobs:
         steps:
           - echo: echo hi
         requires: [~commit, ~pr]
-        sourcePaths: [test/]
+        sourcePaths: [README.md]
