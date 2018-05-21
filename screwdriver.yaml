@@ -6,4 +6,8 @@ jobs:
         steps:
           - echo: echo hi
         requires: [~commit, ~pr]
-        sourcePaths: [README.md]
+    job2:
+        steps:
+          - echo: echo bye
+        requires: [~commit, ~pr]
+        blockedBy: job1
