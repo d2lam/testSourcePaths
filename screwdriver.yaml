@@ -4,7 +4,7 @@ shared:
 jobs:
     job1:
         steps:
-          - echo: echo hi
+          - echo: sleep 30
         requires: [~commit, ~pr]
     job2:
         steps:
