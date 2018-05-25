@@ -4,10 +4,19 @@ shared:
 jobs:
     job1:
         steps:
-          - echo: sleep 30
+          - echo: echo hi
         requires: [~commit, ~pr]
     job2:
         steps:
-          - echo: echo bye
+          - echo: sleep 5
         requires: [~commit, ~pr]
         blockedBy: job1
+    job3:
+        steps:
+          - echo: echo bye
+        requires: job1
+    job4:
+        steps:
+          - echo: echo bye
+        requires: job2
+        blockedBy: job3
