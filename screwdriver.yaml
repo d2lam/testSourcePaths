@@ -10,7 +10,6 @@ jobs:
         steps:
           - echo: sleep 5
         requires: [~commit, ~pr]
-        blockedBy: job1
     job3:
         steps:
           - echo: echo bye
