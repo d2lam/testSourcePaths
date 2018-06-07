@@ -2,3 +2,4 @@
 
 Testing sourcePaths
 should trigger
+test
