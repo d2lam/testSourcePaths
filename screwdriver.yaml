@@ -4,5 +4,5 @@ shared:
 jobs:
     job1:
         steps:
-          - echo: sleep 100
+          - echo: sleep 1000
         requires: [~commit, ~pr]
