@@ -7,6 +7,5 @@ jobs:
           - mystep: echo hi
           - fail: exit
           - teardown-step1: echo hello
-          - anotherstep: echo bye
           - teardown-step2: echo world
         requires: [~commit, ~pr]
