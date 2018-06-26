@@ -5,7 +5,7 @@ jobs:
     job1:
         steps:
           - mystep: echo hi
-          - fail: exit
+          - fail: commanddoesnotexist
           - teardown-step1: echo hello
           - teardown-step2: echo world
         requires: [~commit, ~pr]
