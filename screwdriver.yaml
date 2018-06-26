@@ -4,5 +4,9 @@ shared:
 jobs:
     job1:
         steps:
-          - echo: sleep 1000
+          - mystep: echo hi
+          - fail: exit
+          - teardown-step1: echo hello
+          - anotherstep: echo bye
+          - teardown-step2: echo world
         requires: [~commit, ~pr]
