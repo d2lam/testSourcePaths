@@ -11,5 +11,5 @@ jobs:
     test2:
         steps:
             - echo: echo bye
-        requires: ~test, ~test1
+        requires: [~test, ~test1]
         
