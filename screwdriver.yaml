@@ -7,7 +7,7 @@ jobs:
         requires: ~commit
     test1:
         steps:
-            - echo: echo hi
+            - echo: sleep 20
         requires: ~commit
     test2:
         steps:
