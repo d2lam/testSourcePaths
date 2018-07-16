@@ -8,6 +8,7 @@ jobs:
     test1:
         steps:
             - echo: echo hi
+        requires: ~commit
     test2:
         steps:
             - echo: echo bye
