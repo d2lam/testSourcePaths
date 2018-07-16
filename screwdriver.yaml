@@ -1,8 +1,15 @@
 shared:
     image: node:6
-
 jobs:
-    job1:
+    test:
         steps:
-          - echo: sleep 10
-        requires: [~commit, ~pr]
+            - echo: echo hi
+        requires: ~commit
+    test1:
+        steps:
+            - echo: echo hi
+    test2:
+        steps:
+            - echo: echo bye
+        requires: ~test, ~test1
+        
